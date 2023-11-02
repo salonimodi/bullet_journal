@@ -1,0 +1,48 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../../public/images/login.jpeg');
+    background-size: cover;
+  }
+  
+  .login-form {
+    background: rgba(255, 255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Center-align form elements */
+    box-shadow: 0 0 10px rgba(244, 9, 9, 0.1);
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #cd2085; /* Reddish background color for the button */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #320d08; /* Darker reddish background color on hover */
+  }
+
+  label {
+    color: #1d8bca; /* Reddish color for labels */
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #2cc056; /* Reddish border for input fields */
+    border-radius: 5px;
+  }
+
+  h2 {
+    color: #ecd719;
+  }
+  
