@@ -27,35 +27,41 @@ function TodoList() {
   return (
     <div className="todo-list-container">
       <div className="todo-list">
-        {todos.map((todo) => (
-          <div key={todo.id} className="todo-item">
-            <div>
-              <input
-                type="checkbox"
-                checked={todo.completed}
-                onChange={() => {
-                  // Implement checkbox change logic here
-                }}
-              />
-              <input
-                type="text"
-                value={todo.text}
-                onChange={(e) => {
-                  const newText = e.target.value;
-                  setTodos((prevTodos) =>
-                    prevTodos.map((prevTodo) =>
-                      prevTodo.id === todo.id
-                        ? { ...prevTodo, text: newText }
-                        : prevTodo
-                    )
-                  );
-                }}
-                className="dynamic-width-input"
-              />
-            </div>
-            <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
+        {todos.length === 0 ? (
+          <div className="empty-message">
+            No tasks yet! Click on the "Add Todo" button to get started.
           </div>
-        ))}
+        ) : (
+          todos.map((todo) => (
+            <div key={todo.id} className="todo-item">
+              <div>
+                <input
+                  type="checkbox"
+                  checked={todo.completed}
+                  onChange={() => {
+                    // Implement checkbox change logic here
+                  }}
+                />
+                <input
+                  type="text"
+                  value={todo.text}
+                  onChange={(e) => {
+                    const newText = e.target.value;
+                    setTodos((prevTodos) =>
+                      prevTodos.map((prevTodo) =>
+                        prevTodo.id === todo.id
+                          ? { ...prevTodo, text: newText }
+                          : prevTodo
+                      )
+                    );
+                  }}
+                  className="dynamic-width-input"
+                />
+              </div>
+              <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
+            </div>
+          ))
+        )}
       </div>
       <button className="add-button" onClick={handleAddTodo}>
         Add Todo

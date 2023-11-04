@@ -25,6 +25,19 @@
     border: 1px solid #ccc;
     padding: 8px;
   }
+
+
+  .empty-message {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
   
   .dynamic-width-input {
     flex: 1; 
@@ -32,7 +45,7 @@
 
   .add-button {
     display: flex;
-    width: fit-content;
+    width: fit-content; 
     padding-left: 10px;
     margin-left: 10px;
     padding-bottom: 10px;
