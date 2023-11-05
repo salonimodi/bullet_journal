@@ -1,0 +1,56 @@
+/* CreateAccountPage.css */
+
+.create-account-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../../public/images/login.jpeg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    height: 100vh; /* Ensure the container takes up the full viewport height */
+    justify-content: center;
+  }
+  
+  
+  .create-account-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Adjust the width as needed */
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 255); 
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    gap: 10px; /* Add space between columns */
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    /* Additional styling for label if needed */
+  }
+  
+  input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1; /* Input fields take up available space */
+    /* Additional styling for input if needed */
+  }
+  
+  .create-account {
+    padding: 10px;
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    /* Additional styling for button if needed */
+  }
+  
